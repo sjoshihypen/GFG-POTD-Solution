@@ -8,7 +8,7 @@ class Solution {
         return true;
     }
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
         int v = 5;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         Solution s = new Solution();
