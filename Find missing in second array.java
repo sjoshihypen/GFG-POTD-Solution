@@ -31,3 +31,21 @@ Expected Auxiliary Space: O(m).
 Constraints:
 1 ≤ n, m ≤ 10^5
 -109 ≤ A[i], B[i] ≤ 10^9
+
+
+Solution 
+
+class Solution{
+    ArrayList<Integer> find missing(int x[], int y[], int n, int m){
+    Set<Integer> set = new HashSet<>();
+    List<Integer> ans = new ArrayList<>();
+        for (int num : y) {
+            set.add(num);
+        } for (int i = 0; i < n; i++) {
+            if (!set.contains(x[i])) {
+                ans.add(x[i]);
+            }
+        }
+        return (ArrayList<Integer>) ans;
+    }
+}
